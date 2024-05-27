@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Target
+  - Arrow
+  - Damageable
+  - EnemyStopper
+  - Restart
+  - Death
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2281608259
+    locked: 0
+  - name: Fire
+    uniqueID: 1777443931
+    locked: 0
+  - name: Objects
+    uniqueID: 2921256111
+    locked: 0
+  - name: Character
+    uniqueID: 2062951969
+    locked: 0
+  - name: Arrow
+    uniqueID: 1466529277
+    locked: 0
+  - name: Ground
+    uniqueID: 724140655
+    locked: 0
+  - name: Barrel
+    uniqueID: 1833141217
+    locked: 0
+  - name: Water
+    uniqueID: 157717621
+    locked: 0
+  - name: Middle
+    uniqueID: 1715284683
+    locked: 0
