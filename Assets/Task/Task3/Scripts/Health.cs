@@ -5,6 +5,7 @@ public class Health : MonoBehaviour
     [SerializeField] private float maxHealth;
     private float currentHealth;
     private bool isAlive;
+    private bool isCounted = false; // Добавляем флаг для проверки
 
     [SerializeField] private HealthBar healthBar;
     [SerializeField] private GameOverUI gameOverUI;
@@ -67,6 +68,15 @@ public class Health : MonoBehaviour
         }
         else
         {
+            if (!isCounted)
+            {
+                VictoryScript victoryScript = FindObjectOfType<VictoryScript>();
+                if (victoryScript != null)
+                {
+                    victoryScript.AddKill();
+                }
+                isCounted = true; // Обновляем флаг, чтобы враг засчитался только один раз
+            }
             Destroy(gameObject);
         }
     }

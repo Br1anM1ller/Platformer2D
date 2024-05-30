@@ -2,17 +2,20 @@ using UnityEngine;
 
 public class Bonus : MonoBehaviour
 {
+    private bool isCollected = false;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (isCollected) return;
+
         if (other.CompareTag("Player"))
         {
-            // Находим объект VictoryScript в сцене и увеличиваем счетчик бонусов
             VictoryScript victoryScript = FindObjectOfType<VictoryScript>();
             if (victoryScript != null)
             {
                 victoryScript.AddBonus();
             }
-            // Уничтожаем бонус
+            isCollected = true; // Обновляем флаг, чтобы бонус засчитался только один раз
             Destroy(gameObject);
         }
     }
